@@ -1044,6 +1044,9 @@ p.meta span { margin-right: 10px }
 .values span.icons { font-size: 38px }
 .c1 { background: #D3932A }
 .c2 { background: #E69D27 }
+.C2 .icons {
+    background-color: black;
+}
 .c3 { background: #ffb642 }
 .values span.icons {
     font-size: 238px;
