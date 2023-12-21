@@ -194,7 +194,10 @@ ul.top-links li { padding: 5px 0 }
     width: 100%;
     z-index: 10000;
 }
-.navbar-collapse { padding-left: 0 }
+.navbar-collapse { 
+    padding-left: 0;
+    color: #000000; 
+}
 #main-menu .nav > li > a { padding: 10px 10px }
 .navbar-default .navbar-toggle { border-color: transparent }
 .navbar-default .navbar-toggle:hover,
