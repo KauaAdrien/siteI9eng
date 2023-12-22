@@ -237,21 +237,7 @@ ul.top-links li { padding: 5px 0 }
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
 }
-/* #grid-2x2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-.grid {
-    padding: 8px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 40px;
-    min-width: 140px;
-    height: 96px;
-} */
+
 ol.social-icons li {
     width: 50px;
     height: 50px;
