@@ -588,7 +588,7 @@ a.read-more:hover>span {
 /* Pages 
 /*===========================================*/
 /* Page Content */
-#en-content { padding: 80px 0 }
+#en-content { padding: 25px 0 0 }
 #en-content .img,
 .img { margin: 15px 0 }
 /* Page Header */
