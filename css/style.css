@@ -499,11 +499,6 @@ h4.panel-title { font-weight: 400 }
     border: 1px solid #fff;
     border-radius: 0;
 }
-.height {
-    display: block !important;
-    max-width: 100% !important;
-    height: 500px !important;
-}
 .left span.fa,
 .right span.fa {
     position: absolute;
@@ -620,7 +615,7 @@ a.read-more:hover>span {
 }
 /* Intro */
 #en-intro {
-    padding: 80px 0;
+    padding: 35px 0 10px 0;
     background: #ffffff;
 }
 /* Services */
@@ -1127,7 +1122,7 @@ p.meta span { margin-right: 10px }
 /* Footer Area
 /*===========================================*/
 #en-footer .footer-content {
-    padding: 80px 0;
+    padding: 25px 0 30px;
     background: #222222;
     color: #777;
 }

@@ -93,7 +93,11 @@
         padding-right: 59px;
     }
       #top-menu,
-      .text-right{ text-align: center;}
+      .text-right{ 
+        text-align: center;
+        width: 100%;
+        height: 410px;
+    }
       #main-menu{ text-align: center;}
       #main-menu .navbar-nav > li > a {
           padding-top: 0px;
@@ -101,12 +105,12 @@
       }
       #top-menu .navbar-header{ 
           margin-top: 25px;
-          margin-bottom: 25px;
+          margin-bottom: 5px;
       }
       .list-unstyled {
-        padding-left: 35px;
+        padding-left: 32px;
         list-style: none;
-        padding-right: 35px;
+        padding-right: 32px;
       }
       #top-menu .navbar-brand{ float: none !important;}
       .logo{ margin-right: 0}
@@ -115,12 +119,26 @@
           margin: 0 10px;
       }
       h1 {
-          font-size: 30px;
-          line-height: 30px;
-          letter-spacing: 0;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: 0px;
+      }
+      h1.text3 {
+        font-size: 28px;
+        line-height: 25px;
+        letter-spacing: 0px;
+      }
+      h1.text4 {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        margin: 50px 30px;
       }
       #header-slider .carousel-indicators {bottom: 20px }
-      a.btn{ margin-top: 15px}
+      a.btn{ 
+        margin-top: 15px;
+        padding: 10px 20px;
+    }
       .widget,
       .news,
       .service { margin-bottom: 40px; }
@@ -130,6 +148,11 @@
       }
       #en-portfolio .item p{ font-size: 14px}
       #itemsWork.col3 .hover-bg .hover-text.off { height: 80%}
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+        line-height: 1;
+        height: 220px;
+}
 
       
   }
