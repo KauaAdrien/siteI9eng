@@ -675,6 +675,13 @@ a.read-more:hover>span {
     background-color: #ffb642;
     color: #f1f1f1;
 }
+center.center {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 /* Single Blog Posts */
 ul.share {
     margin: 20px 0;
