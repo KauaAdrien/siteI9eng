@@ -315,13 +315,13 @@ ul.top-links li { padding: 5px 0 }
     font-weight: 700;
     letter-spacing: -1px;
 }
-#main-menu.navbar-default .navbar-nav > .active > a,
-#main-menu.navbar-default .navbar-nav > .active > a:hover,
-#main-menu.navbar-default .navbar-nav > .active > a:focus,
-#main-menu.navbar-default .navbar-nav > li > a:hover,
-#main-menu.navbar-default .navbar-nav > li > a:focus {
+.active > a,
+.active > a:hover,
+.active > a:focus,
+li > a:hover,
+li > a:focus {
     color: white !important;
-    background-color: red;
+    background: linear-gradient(to bottom, #FF0505, #222222);
     /* border-color: #222222; */
 }
 #main-menu .navbar-nav > li > a {
