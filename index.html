@@ -43,12 +43,17 @@
 
     <!-- Google Font
     ================================================== -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet'
+    <!-- Place in your HTML file between the <head> tags -->
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' rel='stylesheet'
         type='text/css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300;1,400&display=swap'
+        rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet'
-        type='text/css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'
+        rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="js/modernizr-custom.js"></script>
 
@@ -105,18 +110,33 @@
 
     <!-- Main Navigation
     ========================-->
-    <div id="sticky-anchor"></div>
-    <nav id="main-menu" class="navbar navbar-default">
+    <div id="sticky-anchor">
+
+        <nav id="menu">
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul>
+                    <li class="active"><a href='index.html'>Início</a></li>
+                    <li><a href='servicos.html'>Serviços</a></li>
+                    <li><a href='quemsomos.html'>Quem Somos</a></li>
+                    <li><a href='contato.html'>Contato</a>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <!-- <nav id="main-menu" class="navbar navbar-default">
         <div class="container">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
+            Brand and toggle get grouped for better mobile display
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
                     <i class="fa fa-list-ul"></i>
                 </button>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            Collect the nav links, forms, and other content for toggling
             <div class="collapse navbar-collapse" id="myMenu">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="active"><a href="index.html">Início</a></li>
@@ -128,10 +148,10 @@
                 </ul>
 
 
-            </div><!-- /.navbar-collapse -->
+            </div>/.navbar-collapse
 
-        </div><!-- /.container -->
-    </nav>
+        </div>/.container
+    </nav> -->
 
     <!-- Main Navigation
     ========================-->

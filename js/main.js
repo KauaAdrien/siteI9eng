@@ -16,11 +16,21 @@ function main() {
         var window_top = $(window).scrollTop();
         var div_top = $('#sticky-anchor').offset().top;
         if (window_top > div_top) {
-            $('#main-menu').addClass('stick');
+            $('#menu').addClass('stick');
         } else {
-            $('#main-menu').removeClass('stick');
+            $('#menu').removeClass('stick');
         }
     }
+
+    function updatemenu() {
+      if (document.getElementById('responsive-menu').checked == true) {
+        document.getElementById('menu').style.borderBottomRightRadius = '0';
+        document.getElementById('menu').style.borderBottomLeftRadius = '0';
+      }else{
+        document.getElementById('menu').style.borderRadius = '0px';
+      }
+    }
+    
   
     $(function () {
         $(window).scroll(sticky_relocate);
