@@ -15,10 +15,10 @@
   .navbar-toggle {
     display: inline-block;
   }
-  #main-menu .navbar-form {
+  #menu .navbar-form {
     display: none;
   }
-  #main-menu {
+  #menu {
     text-align: center;
   }
 }
@@ -139,10 +139,10 @@
     width: 100%;
     height: 410px;
   }
-  #main-menu {
+  #menu {
     text-align: center;
   }
-  #main-menu .navbar-nav > li > a {
+  #menu .navbar-nav > li > a {
     padding-top: 0px;
     padding-bottom: 0px;
   }

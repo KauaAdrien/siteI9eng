@@ -40,6 +40,7 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
     <link rel="stylesheet" type="text/css" href="./css/responsividade.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
     <!-- Google Font
     ================================================== -->
@@ -78,14 +79,14 @@
 
                 <div class="col-sm-4 col-md-4">
                     <div class="navbar-header">
-                        <img src="img/logoi9small2.png">
+                        <img class="wow fadeInLeft" src="img/logoi9small2.png">
                     </div>
                 </div>
 
                 <div class="col-sm-8 col-md-8">
                     <ul class="top-links list-unstyled text-right">
                         <li>
-                            <ol class="social-icons list-inline">
+                            <ol class="social-icons list-inline wow fadeInRight delay-05s">
                                 <li><a class="facebook" href="https://www.facebook.com/i9engenhariaMAO/"
                                         target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                                 <li><a class="linkedin" href="https://br.linkedin.com/company/i9-engenharia"
@@ -111,20 +112,18 @@
     <!-- Main Navigation
     ========================-->
     <div id="sticky-anchor">
+            <nav id="menu">
+                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
 
-        <nav id="menu">
-            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-
-            <div class="collapse navbar-collapse">
-                <ul class="">
-                    <li class="active"><a href='index.html'>Início</a></li>
-                    <li><a href='servicos.html'>Serviços</a></li>
-                    <li><a href='quemsomos.html'>Quem Somos</a></li>
-                    <li><a href='contato.html'>Contato</a>
-                </ul>
-            </div>
-        </nav>
-
+                <div class="collapse navbar-collapse">
+                    <ul class="wow fadeInDown delay-02s">
+                        <li class="active"><a href='index.html'>Início</a></li>
+                        <li><a href='servicos.html'>Serviços</a></li>
+                        <li><a href='quemsomos.html'>Quem Somos</a></li>
+                        <li><a href='contato.html'>Contato</a>
+                    </ul>
+                </div>
+            </nav>
     </div>
     <!-- <nav id="main-menu" class="navbar navbar-default">
         <div class="container">
@@ -159,11 +158,11 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active"> <!-- Slider Item #1 -->
+            <div class="item active wow fadeIn"> <!-- Slider Item #1 -->
                 <img class="height" src="img/slider/01.jpg" alt="i9 Engenharia" width="100%">
                 <div class="carousel-caption">
-                    <h1>Bem Vindo ao nosso site</h1>
-                    <p class="lead">Provemos soluções inteligentes para sua empresa ou negócio.</p>
+                    <h1 class="wow fadeInUp delay-02s">Bem Vindo ao nosso site</h1>
+                    <p class="lead wow fadeIn delay-02s">Provemos soluções inteligentes para sua empresa ou negócio.</p>
                     <a class="btn btn-default en-btn" href="quemsomos.html" role="button">Clique aqui e conheça um <br>
                         pouco
                         da nossa empresa</a>
@@ -208,7 +207,7 @@
                 <img src="img/slider/04.jpg" alt="..." width="100%">
                 <div class="carousel-caption">
                     <h1 class="text4">Sua empresa definitiva de <br>Engenharia</h1>
-                    <!--<p class="lead">Nós oferecemos serviços com o máximo de empenho profissionalismo e tecnologia na execução.</p>
+                    <!-- <p class="lead">Nós oferecemos serviços com o máximo de empenho profissionalismo e tecnologia na execução.</p> -->
                     <!-- <a class="btn btn-default en-btn" href="about.html" role="button">Get Started Now</a> -->
                 </div>
             </div>
@@ -232,9 +231,9 @@
                 <!-- Left Content 4 Cols -->
                 <div class="col-sm-4 col-md-4">
                     <div class="section-title text-left"> <!-- Left Section Title -->
-                        <h2>Sobre a <br>i9 Engenharia</h2>
+                        <h2 class="wow fadeInLeft delay-02s">Sobre a <br>i9 Engenharia</h2>
                         <hr>
-                        <small>Somos uma empresa de engenharia focada em soluções inteligentes, inovadoras e com alta
+                        <small class="wow fadeInUp delay-02s">Somos uma empresa de engenharia focada em soluções inteligentes, inovadoras e com alta
                             eficácia.</small>
                     </div>
                 </div>
@@ -517,6 +516,11 @@
                     <!-- Javascripts
     ================================================== -->
                     <script type="text/javascript" src="js/main.js"></script>
+                    <script src="./js/wow.min.js"></script>
+
+                    <script>
+                        new WOW().init();
+                    </script>
 
 </body>
 

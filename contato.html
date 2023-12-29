@@ -37,6 +37,7 @@
 
     <!-- Stylesheet
     ================================================== -->
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/responsividade.css">
 
@@ -78,8 +79,8 @@
 
                 <div class="col-sm-8 col-md-8">
                     <ul class="top-links list-unstyled text-right">
-                        <li id="grid-2x2">
-                            <ol class="social-icons list-inline">
+                        <li>
+                            <ol class="social-icons list-inline wow fadeInRightBig delay-05s">
                                 <li><a class="facebook" href="https://www.facebook.com/i9engenhariaMAO/"
                                         target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                                 <li><a class="linkedin" href="https://br.linkedin.com/company/i9-engenharia"
@@ -89,7 +90,8 @@
                                         href="mailto:contato@i9engenharia.com?subject=Gostaria de entrar em contato para solicitar mais informações&body=Olá,%20Gostaria%20de%20entrar%20em%20contato."
                                         target="_blank"><i class="fa fa-envelope"></i></a>
                                 </li>
-                                <li><a class="phone" href="tel:+559230882020"><i class="fa fa-phone-square"></i></a></li>
+                                <li><a class="phone" href="tel:+559230882020"><i class="fa fa-phone-square"></i></a>
+                                </li>
                                 <!-- li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li -->
 
                             </ol>
@@ -104,17 +106,31 @@
     <!-- Main Navigation
     ========================-->
     <div id="sticky-anchor"></div>
-    <nav id="main-menu" class="navbar navbar-default">
+
+    <nav id="menu">
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+
+        <div class="collapse navbar-collapse">
+            <ul class="wow fadeInDown delay-02s">
+                <li><a href='index.html'>Início</a></li>
+                <li><a href='servicos.html'>Serviços</a></li>
+                <li><a href='quemsomos.html'>Quem Somos</a></li>
+                <li class="active"><a href='contato.html'>Contato</a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <nav id="main-menu" class="navbar navbar-default">
         <div class="container">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
+            Brand and toggle get grouped for better mobile display
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
                     <i class="fa fa-list-ul"></i>
                 </button>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            Collect the nav links, forms, and other content for toggling
 
             <div class="collapse navbar-collapse" id="myMenu">
                 <ul class="nav navbar-nav navbar-left">
@@ -122,12 +138,11 @@
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="quemsomos.html">Quem Somos</a></li>
                     <li class="active"><a href="contato.html">Contato</a></li>
-                </ul </div>
+                </ul>
+            </div>
 
-            </div><!-- /.navbar-collapse -->
-
-        </div><!-- /.container -->
-    </nav>
+        </div>
+    </nav> -->
 
     <!-- Page Header
     ========================-->
@@ -242,122 +257,128 @@
 
     <!-- Other Offices
     ========================-->
-    <d <!-- Footer Area -->
-        <div id="en-footer">
-            <div class="footer-content">
-                <div class="container">
+    <!-- <d Footer Area -->
+    <div id="en-footer">
+        <div class="footer-content">
+            <div class="container">
 
-                    <div class="row">
+                <div class="row">
 
-                        <div class="col-sm-5 col-md-5">
-                            <div class="widget">
-                                <div class="widget-title text-left">
-                                    <h4>Quem Somos</h4>
-                                    <hr>
-                                </div>
-
-                                <br>
-                                <center><img src="img/logoi9small2.png"></center>
-                                <br>
-                                <small>Somos uma empresa de engenharia focada em soluções inteligentes, inovadoras e com
-                                    alta eficácia. </small>
-                                <br>
-                                <br>
-                                <address>
-                                    <strong>i9 Engenharia.</strong><br>
-                                    Manaus, Amazonas, Brasil<br>
-                                    Rua Campina Verde, 347, Cj. Duque de Caxias - Flores<br>
-                                    <a href="tel:+559230882020">Tel: +55 92 3088-2020</a><a href="tel:+559233049119"> / 3304-9119</a>
-                                </address>
-
+                    <div class="col-sm-5 col-md-5">
+                        <div class="widget">
+                            <div class="widget-title text-left">
+                                <h4>Quem Somos</h4>
+                                <hr>
                             </div>
-                        </div>
 
-                        <div class="col-sm-4 col-md-4">
-                            <div class="widget">
-                                <div class="widget-title text-left">
-                                    <h4>Nossos Serviços</h4>
-                                    <hr>
-                                </div>
-                                <ul class="list-unstyled list-block">
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Data-centers,
-                                            salas de equipos e infra</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i> <a href="servicos.html">Segurança e
-                                            monitoramento eletrônicos</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Elaboração e
-                                            execução de projetos de redes</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Engenharia e
-                                            Construção Civil em Geral</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Fabricação e
-                                            montagem de estruturas metálicas</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Montagens e
-                                            Tubulações Industriais</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Locação de
-                                            Mão-de-obra Especializada</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Locação de
-                                            Equipamentos</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Sistemas elétricos
-                                            e de automação</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Sistemas de
-                                            Aerofotogrametria</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Serviços de
-                                            Batimetria</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Projetos de
-                                            Energia Solar Fotovoltaica</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                            <br>
+                            <center><img src="img/logoi9small2.png"></center>
+                            <br>
+                            <small>Somos uma empresa de engenharia focada em soluções inteligentes, inovadoras e com
+                                alta eficácia. </small>
+                            <br>
+                            <br>
+                            <address>
+                                <strong>i9 Engenharia.</strong><br>
+                                Manaus, Amazonas, Brasil<br>
+                                Rua Campina Verde, 347, Cj. Duque de Caxias - Flores<br>
+                                <a href="tel:+559230882020">Tel: +55 92 3088-2020</a><a href="tel:+559233049119"> /
+                                    3304-9119</a>
+                            </address>
 
-                        <div class="col-sm-3 col-md-3">
-                            <div class="widget">
-                                <div class="widget-title text-left">
-                                    <h4>Menu do Site</h4>
-                                    <hr>
-                                </div>
-                                <ul class="list-unstyled list-block">
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="index.html">Início</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="quemsomos.html">Quem Somos</a>
-                                    </li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Nossos
-                                            Serviços</a></li>
-                                    <li><i class="fa fa-long-arrow-right"></i><a href="contato.html">Contato</a></li>
-                                </ul>
-                            </div>
                         </div>
-
                     </div>
 
-                    <div class="clearfix"></div>
-                    <div class="smallspacer"></div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="widget">
+                            <div class="widget-title text-left">
+                                <h4>Nossos Serviços</h4>
+                                <hr>
+                            </div>
+                            <ul class="list-unstyled list-block">
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Data-centers,
+                                        salas de equipos e infra</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i> <a href="servicos.html">Segurança e
+                                        monitoramento eletrônicos</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Elaboração e
+                                        execução de projetos de redes</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Engenharia e
+                                        Construção Civil em Geral</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Fabricação e
+                                        montagem de estruturas metálicas</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Montagens e
+                                        Tubulações Industriais</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Locação de
+                                        Mão-de-obra Especializada</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Locação de
+                                        Equipamentos</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Sistemas elétricos
+                                        e de automação</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Sistemas de
+                                        Aerofotogrametria</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Serviços de
+                                        Batimetria</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Projetos de
+                                        Energia Solar Fotovoltaica</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-md-3">
+                        <div class="widget">
+                            <div class="widget-title text-left">
+                                <h4>Menu do Site</h4>
+                                <hr>
+                            </div>
+                            <ul class="list-unstyled list-block">
+                                <li><i class="fa fa-long-arrow-right"></i><a href="index.html">Início</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="quemsomos.html">Quem Somos</a>
+                                </li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="servicos.html">Nossos
+                                        Serviços</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <div class="bottom-footer">
-                <div class="container text-center">
-                    <p>Direitos Reservados © 2019 | <a href="#">i9 Engenharia - Soluções Inteligentes</a></p>
-                </div>
+
+                <div class="clearfix"></div>
+                <div class="smallspacer"></div>
             </div>
         </div>
+        <div class="bottom-footer">
+            <div class="container text-center">
+                <p>Direitos Reservados © 2019 | <a href="#">i9 Engenharia - Soluções Inteligentes</a></p>
+            </div>
+        </div>
+    </div>
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
-        <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
-        <script type="text/javascript" src="js/nivo-lightbox.min.js"></script><!-- LightBox Nivo -->
+    <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+    <script type="text/javascript" src="js/nivo-lightbox.min.js"></script><!-- LightBox Nivo -->
 
-        <!-- Portfolio Filter -->
-        <script type="text/javascript" src="js/jquery.isotope.js"></script>
-        <script type="text/javascript" src="js/imagesloaded.js"></script>
+    <!-- Portfolio Filter -->
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.js"></script>
 
-        <!-- Contact page
+    <!-- Contact page
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
-    
+    <script type="text/javascript" src="js/contact.js"></script> -->
+
     <!-- Javascripts
     ================================================== -->
-        <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="./js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
