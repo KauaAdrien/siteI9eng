@@ -3,16 +3,17 @@
 // This is The Scripts used for ___________ Theme
 //
 //
+
 'use strict';
 
-function updatemenu() {
-  if (document.getElementById('responsive-menu').checked == false) {
-    document.getElementById('menu').style.borderBottomRightRadius = '0';
-    document.getElementById('menu').style.borderBottomLeftRadius = '0';
-  }else{
-    document.getElementById('menu').style.borderRadius = '0px';
-  }
-};
+    function updatemenu() {
+      if (document.getElementById('responsive-menu').checked == false) {
+          document.getElementById('menu').style.borderBottomRightRadius = '0';
+          document.getElementById('menu').style.borderBottomLeftRadius = '0';
+      }else{
+          document.getElementById('menu').style.borderRadius = '0px';
+      }
+    };
 
 function main() {
 
